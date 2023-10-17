@@ -27,8 +27,8 @@ function App() {
 
   }, [isFetching, refetch])
 
-  if (isLoading) return 'Loading...'
-  if (isError) return 'Error'
+  if (isLoading) return <Paragraph style={{textAlign: 'center'}}>Loading...</Paragraph>
+  if (isError) return <Paragraph style={{textAlign: 'center'}}>Error</Paragraph>
   
   total.current = data?.posts.length || 0
 
