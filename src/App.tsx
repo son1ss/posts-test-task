@@ -51,7 +51,7 @@ function App() {
           {post.tags && post.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
         </Card>  
       )}
-      {isFetching && 'Loading...'}
+      {isFetching && <Paragraph style={{textAlign: 'center'}}>Loading...</Paragraph>}
     </>
   )
 }
